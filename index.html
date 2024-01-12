@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Sorting Tool</title>
+</head>
+<body>
+    <div style="display: flex; width: 100%;">
+        <!-- Main area for image display -->
+        <div id="imageArea" style="flex-grow: 1;">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <!-- Sidebar for options -->
+        <div id="sidebar" style="width: 200px;">
+            <input type="file" id="uploadImage">
+            <br>
+            Speed: <input type="range" id="speedSlider" min="0.01" max="1" step="0.01" value="0.5">
+            <br>
+            Sorting Algorithm: <select id="algorithmPicker"></select>
+            <br>
+            Sort By: <select id="sortByPicker"></select>
+            <br>
+            <button id="startButton">Start</button>
+            <button id="resetButton">Reset</button>
+            <button id="downloadButton" style="display: none;">Download</button>
+        </div>
+    </div>
+
+    <script src="state.js"></script>
+    <script src="canvas.js"></script>
+    <script src="image.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>

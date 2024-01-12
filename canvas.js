@@ -14,5 +14,3 @@ function drawImageData(canvas, imageData) {
         }
     }
 }
-
-
